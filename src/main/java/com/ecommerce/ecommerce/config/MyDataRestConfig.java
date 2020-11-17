@@ -27,17 +27,17 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
     @Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
 
+        /*
         HttpMethod[] unsupportedActions = {};
-
         config.getExposureConfiguration()
                 .forDomainType(Product.class)
                 .withItemExposure(((metadata, httpMethods) -> httpMethods.disable(unsupportedActions)))
                 .withCollectionExposure((metadata, httpMethods) -> httpMethods.disable(unsupportedActions));
-
         config.getExposureConfiguration()
                 .forDomainType(ProductCategory.class)
                 .withItemExposure(((metadata, httpMethods) -> httpMethods.disable(unsupportedActions)))
                 .withCollectionExposure((metadata, httpMethods) -> httpMethods.disable(unsupportedActions));
+        */
 
         exposeIds(config);
     }

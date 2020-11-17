@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="aws-rds" uuid="f12d309c-f95e-4331-ab65-dea850c151ec">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://db.cztmiqekoulr.us-east-2.rds.amazonaws.com:3306/db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="ecommerce_stage@localhost" uuid="21b7e42a-d9a0-43d8-ac58-e1641192a870">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/ecommerce_stage?reconnect=True</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="mysql_docker" uuid="f129629e-a345-4265-ad18-683e81d18906">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:4233/ecommerce_stage</jdbc-url>
+    </data-source>
+  </component>
+</project>
