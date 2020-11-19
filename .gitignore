@@ -130,3 +130,4 @@ hs_err_pid*
 ### Java-Web ###
 ## ignoring target file
 target/
+!/src/main/resources/application.properties

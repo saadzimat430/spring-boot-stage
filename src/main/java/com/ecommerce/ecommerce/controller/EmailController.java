@@ -1,16 +1,13 @@
 package com.ecommerce.ecommerce.controller;
 
 import com.ecommerce.ecommerce.entity.EmailInfo;
-import com.ecommerce.ecommerce.entity.Order;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.web.bind.annotation.*;
 
-import javax.mail.MessagingException;
 import javax.validation.Valid;
 import java.util.Properties;
 
@@ -26,7 +23,7 @@ public class EmailController {
     private String email;
 
     @PostMapping("/sendEmail")
-    public ResponseEntity<?> sendEmail(@Valid @RequestBody EmailInfo emailInfo) throws MessagingException {
+    public ResponseEntity<?> sendEmail(@Valid @RequestBody EmailInfo emailInfo) {
 
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
         mailSender.setHost("smtp.gmail.com");
