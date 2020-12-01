@@ -40,7 +40,7 @@ public class EmailController {
 
         MimeMessagePreparator preparator = message -> {
             MimeMessageHelper helper = new MimeMessageHelper(message, MimeMessageHelper.MULTIPART_MODE_MIXED, "UTF-8");
-            helper.setFrom("Zenith Lighting <edmdemonz2000@gmail.com>");
+            helper.setFrom("Zenith Lighting <edmdemonz908@gmail.com>");
             helper.setTo(emailInfo.getEmail());
             helper.setSubject("Order " + emailInfo.getOrderStatus());
             helper.setText(String.format("Hello %s, \nWe want to inform you that your order was %s.\n\nKind regards,\nZenith Lighting Inc.",
